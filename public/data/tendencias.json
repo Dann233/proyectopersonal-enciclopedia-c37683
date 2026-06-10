@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "nombre": "Gorpcore Urbano",
+    "categoria": "Utilitario",
+    "descripcion": "El Gorpcore Urbano fusiona la estética outdoor con el streetwear cotidiano. Pantalones cargo, chaquetas resistentes al viento, botas de senderismo y colores como verde oliva, beige y gris lavado dominan este estilo. No es solo moda: es funcionalidad llevada a la calle.",
+    "imagen": "gorpcore.jpg",
+    "audio": "audio_gorpcore.mp3",
+    "tags": ["utilitario", "outdoor", "cargo", "funcional", "2026"]
+  },
+  {
+    "id": 2,
+    "nombre": "Color Block",
+    "categoria": "Streetwear",
+    "descripcion": "Combinar bloques de colores vibrantes sin miedo es la esencia del Color Block. Desde tonos pastel hasta neones intensos, esta tendencia impulsada por marcas como Nike, Adidas y New Balance domina el streetwear de primavera 2026. El objetivo es crear looks llenos de personalidad cromática.",
+    "imagen": "colorblock.jpg",
+    "audio": "audio_colorblock.mp3",
+    "tags": ["colores", "vibrante", "nike", "adidas", "streetwear", "2026"]
+  },
+  {
+    "id": 3,
+    "nombre": "Glamuratti",
+    "categoria": "Lujo Expresivo",
+    "descripcion": "Una reacción directa al Quiet Luxury. El Glamuratti recupera el exceso medido: brillos, plumas, texturas llamativas y estampados que convierten la ropa en una forma de expresión pura. No se trata de gritar, sino de impactar con intención.",
+    "imagen": "glamuratti.jpg",
+    "audio": "audio_glamuratti.mp3",
+    "tags": ["lujo", "brillos", "expresivo", "tendencia", "2026"]
+  },
+  {
+    "id": 4,
+    "nombre": "Poetcore",
+    "categoria": "Romántico",
+    "descripcion": "El Poetcore apuesta por la sobriedad romántica. Telas suaves, paletas neutras, siluetas fluidas y detalles delicados como broches vintage o cuellos con volumen. Es el estilo de quien construye su imagen desde la introspección y la sensibilidad.",
+    "imagen": "poetcore.jpg",
+    "audio": null,
+    "tags": ["romántico", "suave", "fluido", "minimalista", "2026"]
+  },
+  {
+    "id": 5,
+    "nombre": "Sastrería Streetwear",
+    "categoria": "Híbrido",
+    "descripcion": "El streetwear se vuelve adulto. Blazers estructurados combinados con cargo pants, zapatillas con americana o sudaderas bajo abrigos de corte clásico. La sastrería infiltrada en lo urbano es la señal de que el streetwear 2026 busca madurez sin perder identidad.",
+    "imagen": "sastreria.jpg",
+    "audio": null,
+    "tags": ["blazer", "híbrido", "maduro", "urbano", "clásico", "2026"]
+  },
+  {
+    "id": 6,
+    "nombre": "Encaje Urbano",
+    "categoria": "Romántico",
+    "descripcion": "Lo que antes era sinónimo de feminidad clásica hoy se reinventa en clave street. El encaje aparece en tops sobre camisetas, en capas bajo chaquetas bomber o como detalle en pantalones cargo. Una contradicción que funciona perfectamente en 2026.",
+    "imagen": "encaje.jpg",
+    "audio": null,
+    "tags": ["encaje", "romántico", "street", "layering", "2026"]
+  },
+  {
+    "id": 7,
+    "nombre": "Workwear Revival",
+    "categoria": "Utilitario",
+    "descripcion": "La ropa de trabajo se convierte en moda. Monos, chaquetas de mecánico, denim robusto y tejidos resistentes en colores tierra definen esta tendencia. El Workwear Revival celebra la funcionalidad y la durabilidad como valores estéticos en sí mismos.",
+    "imagen": "workwear.jpg",
+    "audio": null,
+    "tags": ["workwear", "denim", "funcional", "utilitario", "tierra", "2026"]
+  },
+  {
+    "id": 8,
+    "nombre": "Sneaker Retro Skater",
+    "categoria": "Calzado",
+    "descripcion": "Las zapatillas retro con siluetas slim, colores suaves o lavados y referencias noventeras al skate lideran el calzado en 2026. Marcas clásicas del skate como Vans, DC o New Balance dominan esta estética que mezcla nostalgia con uso cotidiano.",
+    "imagen": "sneaker.jpg",
+    "audio": null,
+    "tags": ["sneakers", "retro", "skate", "noventero", "calzado", "2026"]
+  },
+  {
+    "id": 9,
+    "nombre": "Oversize Gráfico",
+    "categoria": "Streetwear",
+    "descripcion": "Siluetas amplias con estampados gráficos contundentes. Camisetas oversize, hoodies con prints, chaquetas con ilustraciones grandes. El Oversize Gráfico es la apuesta más directa del streetwear 2026: hacer del torso un lienzo.",
+    "imagen": "oversize.jpg",
+    "audio": null,
+    "tags": ["oversize", "gráfico", "print", "hoodie", "streetwear", "2026"]
+  },
+  {
+    "id": 10,
+    "nombre": "Chándal Couture",
+    "categoria": "Athleisure",
+    "descripcion": "El chándal deja de ser ropa de casa para convertirse en una declaración de estilo. Conjuntos coordinados en materiales premium, con accesorios de lujo, encaje como detalle o zapatillas de diseñador. En 2026 el chándal es couture.",
+    "imagen": "chandal.jpg",
+    "audio": null,
+    "tags": ["chándal", "athleisure", "couture", "coordinado", "lujo", "2026"]
+  }
+]
