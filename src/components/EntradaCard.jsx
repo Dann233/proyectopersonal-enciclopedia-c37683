@@ -1,11 +1,16 @@
-function EntradaCard({ entrada }) {
+import AudioPlayer from './AudioPlayer'
+
+function EntradaCard({ entrada, index }) {
   return (
     <div className="entrada-card">
-      <img
-        src={`/images/${entrada.imagen}`}
-        alt={entrada.nombre}
-        className="entrada-img"
-      />
+      <div className="entrada-img-wrapper">
+        <img
+          src={`/images/${entrada.imagen}`}
+          alt={entrada.nombre}
+          className="entrada-img"
+        />
+        <span className="entrada-index">{String(index).padStart(2, '0')}</span>
+      </div>
       <div className="entrada-info">
         <span className="entrada-categoria">{entrada.categoria}</span>
         <h2 className="entrada-nombre">{entrada.nombre}</h2>
@@ -15,6 +20,7 @@ function EntradaCard({ entrada }) {
             <span key={tag} className="tag">#{tag}</span>
           ))}
         </div>
+        <AudioPlayer src={entrada.audio} />
       </div>
     </div>
   )

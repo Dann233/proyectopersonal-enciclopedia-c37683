@@ -10,11 +10,15 @@ function App() {
   const [query, setQuery] = useState('')
   const [categoriaActiva, setCategoriaActiva] = useState('Todas')
   const [darkMode, setDarkMode] = useState(false)
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     fetch('/proyectopersonal-enciclopedia-c37683/data/tendencias.json')
       .then((res) => res.json())
-      .then((data) => setTendencias(data))
+      .then((data) => {
+        setTendencias(data)
+        setLoading(false)
+      })
   }, [])
 
   useEffect(() => {
@@ -46,18 +50,30 @@ function App() {
           <SearchBar query={query} onSearch={setQuery} />
           <FilterBar categorias={categorias} categoriaActiva={categoriaActiva} onSelect={setCategoriaActiva} />
         </div>
-        <p className="results-info">{filtradas.length} entradas</p>
-        <div className="grid">
-          {filtradas.length > 0 ? (
-            filtradas.map((entrada, index) => (
-              <EntradaCard key={entrada.id} entrada={entrada} index={index + 1} />
-            ))
-          ) : (
-            <div className="empty-state">
-              <p>Sin resultados para "{query}"</p>
+
+        {loading ? (
+          <div className="loading-state">
+            <div className="loading-spinner" />
+            <p>Cargando tendencias...</p>
+          </div>
+        ) : (
+          <>
+            <p className="results-info">
+              <span className="results-count">{filtradas.length}</span> entradas
+            </p>
+            <div className="grid">
+              {filtradas.length > 0 ? (
+                filtradas.map((entrada, index) => (
+                  <EntradaCard key={entrada.id} entrada={entrada} index={index + 1} />
+                ))
+              ) : (
+                <div className="empty-state">
+                  <p>Sin resultados para "{query}"</p>
+                </div>
+              )}
             </div>
-          )}
-        </div>
+          </>
+        )}
       </main>
     </>
   )
