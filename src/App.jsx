@@ -12,7 +12,7 @@ function App() {
   const [categoriaActiva, setCategoriaActiva] = useState('Todas')
   const [darkMode, setDarkMode] = useState(false)
   const [loading, setLoading] = useState(true)
-  const [entradaSeleccionada, setEntradaSeleccionada] = useState(null)
+  const [indexSeleccionado, setIndexSeleccionado] = useState(null)
 
   useEffect(() => {
     fetch('/proyectopersonal-enciclopedia-c37683/data/tendencias.json')
@@ -28,12 +28,12 @@ function App() {
   }, [darkMode])
 
   useEffect(() => {
-    if (entradaSeleccionada) {
+    if (indexSeleccionado !== null) {
       document.body.style.overflow = 'hidden'
     } else {
       document.body.style.overflow = ''
     }
-  }, [entradaSeleccionada])
+  }, [indexSeleccionado])
 
   const categorias = useMemo(() => {
     return [...new Set(tendencias.map((t) => t.categoria))]
@@ -46,6 +46,11 @@ function App() {
       return coincideBusqueda && coincideCategoria
     })
   }, [tendencias, query, categoriaActiva])
+
+  const entradaSeleccionada = indexSeleccionado !== null ? filtradas[indexSeleccionado] : null
+
+  const handlePrev = () => setIndexSeleccionado((i) => (i > 0 ? i - 1 : filtradas.length - 1))
+  const handleNext = () => setIndexSeleccionado((i) => (i < filtradas.length - 1 ? i + 1 : 0))
 
   return (
     <>
@@ -80,7 +85,7 @@ function App() {
                     key={entrada.id}
                     entrada={entrada}
                     index={index + 1}
-                    onClick={setEntradaSeleccionada}
+                    onClick={() => setIndexSeleccionado(index)}
                   />
                 ))
               ) : (
@@ -92,7 +97,12 @@ function App() {
           </>
         )}
       </main>
-      <Modal entrada={entradaSeleccionada} onClose={() => setEntradaSeleccionada(null)} />
+      <Modal
+        entrada={entradaSeleccionada}
+        onClose={() => setIndexSeleccionado(null)}
+        onPrev={handlePrev}
+        onNext={handleNext}
+      />
     </>
   )
 }

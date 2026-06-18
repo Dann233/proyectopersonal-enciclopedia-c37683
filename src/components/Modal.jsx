@@ -1,4 +1,4 @@
-function Modal({ entrada, onClose }) {
+function Modal({ entrada, onClose, onPrev, onNext }) {
   if (!entrada) return null
 
   const imageSrc = entrada.imagen.startsWith('http')
@@ -9,6 +9,8 @@ function Modal({ entrada, onClose }) {
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <button className="modal-close" onClick={onClose}>✕</button>
+        <button className="modal-nav modal-prev" onClick={(e) => { e.stopPropagation(); onPrev() }}>‹</button>
+        <button className="modal-nav modal-next" onClick={(e) => { e.stopPropagation(); onNext() }}>›</button>
         <div className="modal-img-wrapper">
           <img src={imageSrc} alt={entrada.nombre} className="modal-img" />
         </div>

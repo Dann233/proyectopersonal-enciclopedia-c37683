@@ -65,7 +65,7 @@
     "nombre": "Sastrería Streetwear",
     "categoria": "Híbrido",
     "descripcion": "El streetwear se vuelve adulto. Blazers estructurados combinados con cargo pants, zapatillas con americana o sudaderas bajo abrigos de corte clásico. La sastrería infiltrada en lo urbano es la señal de que el streetwear 2026 busca madurez sin perder identidad.",
-    "imagen": "sastreria.jpg",
+    "imagen": "https://images.pexels.com/photos/11484873/pexels-photo-11484873.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
     "audio": null,
     "tags": [
       "blazer",
@@ -81,7 +81,7 @@
     "nombre": "Encaje Urbano",
     "categoria": "Romántico",
     "descripcion": "Lo que antes era sinónimo de feminidad clásica hoy se reinventa en clave street. El encaje aparece en tops sobre camisetas, en capas bajo chaquetas bomber o como detalle en pantalones cargo. Una contradicción que funciona perfectamente en 2026.",
-    "imagen": "encaje.jpg",
+    "imagen": "https://images.pexels.com/photos/27082479/pexels-photo-27082479.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
     "audio": null,
     "tags": [
       "encaje",
@@ -96,7 +96,7 @@
     "nombre": "Workwear Revival",
     "categoria": "Utilitario",
     "descripcion": "La ropa de trabajo se convierte en moda. Monos, chaquetas de mecánico, denim robusto y tejidos resistentes en colores tierra definen esta tendencia. El Workwear Revival celebra la funcionalidad y la durabilidad como valores estéticos en sí mismos.",
-    "imagen": "workwear.jpg",
+    "imagen": "https://images.pexels.com/photos/7483041/pexels-photo-7483041.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
     "audio": null,
     "tags": [
       "workwear",
@@ -112,7 +112,7 @@
     "nombre": "Sneaker Retro Skater",
     "categoria": "Streetwear",
     "descripcion": "Las zapatillas retro con siluetas slim, colores suaves o lavados y referencias noventeras al skate lideran el calzado en 2026. Marcas clásicas del skate como Vans, DC o New Balance dominan esta estética que mezcla nostalgia con uso cotidiano.",
-    "imagen": "sneaker.jpg",
+    "imagen": "https://images.pexels.com/photos/32369451/pexels-photo-32369451.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
     "audio": null,
     "tags": [
       "sneakers",
@@ -128,7 +128,7 @@
     "nombre": "Oversize Gráfico",
     "categoria": "Streetwear",
     "descripcion": "Siluetas amplias con estampados gráficos contundentes. Camisetas oversize, hoodies con prints, chaquetas con ilustraciones grandes. El Oversize Gráfico es la apuesta más directa del streetwear 2026: hacer del torso un lienzo.",
-    "imagen": "oversize.jpg",
+    "imagen": "https://images.pexels.com/photos/34802365/pexels-photo-34802365.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
     "audio": null,
     "tags": [
       "oversize",
@@ -144,7 +144,7 @@
     "nombre": "Chándal Couture",
     "categoria": "Lujo Expresivo",
     "descripcion": "El chándal deja de ser ropa de casa para convertirse en una declaración de estilo. Conjuntos coordinados en materiales premium, con accesorios de lujo, encaje como detalle o zapatillas de diseñador. En 2026 el chándal es couture.",
-    "imagen": "chandal.jpg",
+    "imagen": "https://images.pexels.com/photos/35641386/pexels-photo-35641386.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
     "audio": null,
     "tags": [
       "chándal",
@@ -160,7 +160,7 @@
     "nombre": "Animal Print Urbano",
     "categoria": "Streetwear",
     "descripcion": "El estampado de leopardo, vaca y cebra deja de ser excéntrico para volverse esencial en el streetwear de 2026. Zapatillas Adidas Samba, Nike Air Force 1 y prendas con estos prints dominan el street style de primavera. Lo salvaje ya no es opcional.",
-    "imagen": "animalprint.jpg",
+    "imagen": "https://images.pexels.com/photos/7973020/pexels-photo-7973020.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
     "audio": null,
     "tags": [
       "animal print",
@@ -175,7 +175,7 @@
     "nombre": "Tul Romántico Street",
     "categoria": "Romántico",
     "descripcion": "El tul sale de las pasarelas y entra a la calle. Faldas vaporosas sobre jeans, capas translúcidas sobre conjuntos urbanos y detalles etéreos en looks cotidianos. Una contradicción que define perfectamente la moda urbana de 2026: lo delicado en lo cotidiano.",
-    "imagen": "tul.jpg",
+    "imagen": "https://images.pexels.com/photos/33839613/pexels-photo-33839613.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
     "audio": null,
     "tags": [
       "tul",
@@ -183,262 +183,6 @@
       "capas",
       "street",
       "etéreo",
-      "2026"
-    ]
-  },
-  {
-    "id": 13,
-    "nombre": "Sastrería Ochentera",
-    "categoria": "Híbrido",
-    "descripcion": "Los trajes ochenteros regresan con hombros marcados, colores saturados y cortes amplios. No es nostalgia pura: se mezcla con zapatillas retro y accesorios actuales para crear un híbrido entre la oficina y la calle. La potencia visual de los 80 al servicio del 2026.",
-    "imagen": "ochentera.jpg",
-    "audio": null,
-    "tags": [
-      "ochentero",
-      "sastrería",
-      "hombros",
-      "retro",
-      "híbrido",
-      "2026"
-    ]
-  },
-  {
-    "id": 14,
-    "nombre": "Lana Couture",
-    "categoria": "Lujo Expresivo",
-    "descripcion": "Mohair, alpaca, bouclé y tejidos peludos protagonizan la moda de 2026. La lana se revaloriza como material premium con texturas que generan volumen y presencia. Siluetas inspiradas en la oveja, colores funcionales y una estética limpia que combina lo natural con lo lujoso.",
-    "imagen": "lana.jpg",
-    "audio": null,
-    "tags": [
-      "lana",
-      "mohair",
-      "alpaca",
-      "textura",
-      "lujo",
-      "2026"
-    ]
-  },
-  {
-    "id": 15,
-    "nombre": "Denim Raw",
-    "categoria": "Utilitario",
-    "descripcion": "El denim vuelve a sus raíces: sin lavar, sin desteñir, sin trucos. El denim crudo en azul oscuro intenso domina tanto en pantalones como en chaquetas y overalls. Resistencia y autenticidad como valores estéticos, directamente desde la ropa de trabajo al guardarropa urbano.",
-    "imagen": "denim.jpg",
-    "audio": null,
-    "tags": [
-      "denim",
-      "raw",
-      "azul",
-      "autenticidad",
-      "workwear",
-      "2026"
-    ]
-  },
-  {
-    "id": 16,
-    "nombre": "Balletcore Urbano",
-    "categoria": "Romántico",
-    "descripcion": "Las zapatillas de ballet, las mallas y los lazos pasaron del estudio a la calle. En 2026 el balletcore se fusiona con el streetwear: medias de red sobre sneakers, faldas wrap sobre pantalones cargo y colores nude y rosa pálido en combinaciones inesperadas.",
-    "imagen": "ballet.jpg",
-    "audio": null,
-    "tags": [
-      "ballet",
-      "lazos",
-      "nude",
-      "romántico",
-      "fusión",
-      "2026"
-    ]
-  },
-  {
-    "id": 17,
-    "nombre": "Coquette Oscuro",
-    "categoria": "Romántico",
-    "descripcion": "La estética coquette se tiñe de negro y burdeos. Lazos en tonos oscuros, encaje negro, corsés sobre camisas y una actitud que mezcla la femineidad exagerada con la oscuridad gótica. Es la respuesta sombría al pastel saturado de años anteriores.",
-    "imagen": "coquette.jpg",
-    "audio": null,
-    "tags": [
-      "coquette",
-      "oscuro",
-      "lazos",
-      "gótico",
-      "burdeos",
-      "2026"
-    ]
-  },
-  {
-    "id": 18,
-    "nombre": "Nortecore Elevado",
-    "categoria": "Utilitario",
-    "descripcion": "Lo mundano como declaración de estilo. El nortecore de 2026 toma la ropa anónima — pantalones beige, polos blancos, chaquetas cortavientos — y la eleva con proporciones precisas y materialidad premium. La anti-moda convertida en la tendencia más sofisticada.",
-    "imagen": "nortecore.jpg",
-    "audio": null,
-    "tags": [
-      "nortecore",
-      "minimal",
-      "beige",
-      "básicos",
-      "proporción",
-      "2026"
-    ]
-  },
-  {
-    "id": 19,
-    "nombre": "Moto Couture",
-    "categoria": "Streetwear",
-    "descripcion": "La estética de motociclista se refina en 2026. Chaquetas de cuero con detalles de lujo, pantalones de moto en materiales técnicos y botas pesadas combinadas con prendas elegantes. El peligro domesticado, la rebeldía con acabados de alta costura.",
-    "imagen": "moto.jpg",
-    "audio": null,
-    "tags": [
-      "moto",
-      "cuero",
-      "rebelde",
-      "couture",
-      "biker",
-      "2026"
-    ]
-  },
-  {
-    "id": 20,
-    "nombre": "Preppy Subvertido",
-    "categoria": "Híbrido",
-    "descripcion": "Los códigos del estilo preppy — argyle, polos, mocasines, rayas — se deconstruyen y mezclan con prendas urbanas. Suéteres de rombos sobre hoodies, mocasines con calcetines altos y jeans anchos. El country club infiltrado en la calle sin pedir permiso.",
-    "imagen": "preppy.jpg",
-    "audio": null,
-    "tags": [
-      "preppy",
-      "argyle",
-      "polo",
-      "subvertido",
-      "híbrido",
-      "2026"
-    ]
-  },
-  {
-    "id": 21,
-    "nombre": "Tactical Wear",
-    "categoria": "Utilitario",
-    "descripcion": "Múltiples bolsillos, velcro, nylon técnico y colores militares definen el Tactical Wear. Una estética que toma la ropa de operaciones especiales y la traslada al día a día urbano. Funcionalidad extrema como declaración de estilo: cada bolsillo tiene un propósito.",
-    "imagen": "tactical.jpg",
-    "audio": null,
-    "tags": [
-      "tactical",
-      "militar",
-      "bolsillos",
-      "nylon",
-      "funcional",
-      "2026"
-    ]
-  },
-  {
-    "id": 22,
-    "nombre": "Academia Oscura Sport",
-    "categoria": "Híbrido",
-    "descripcion": "El uniforme escolar clásico colisiona con la ropa deportiva en una de las fusiones más originales de 2026. Blazer estructurado con joggers, corbata sobre hoodie, mocasines con calcetines de deporte. La academia y la calle en un solo look sin reglas.",
-    "imagen": "academia.jpg",
-    "audio": null,
-    "tags": [
-      "academia",
-      "escolar",
-      "sport",
-      "fusión",
-      "híbrido",
-      "2026"
-    ]
-  },
-  {
-    "id": 23,
-    "nombre": "Coastal Cowboy",
-    "categoria": "Híbrido",
-    "descripcion": "La estética vaquera del sur americano se funde con la ropa de playa. Botas de cowboy con shorts de lino, sombrero de ala ancha con camisa ligera y accesorios de cuero en tonos arena. El oeste salvaje reinterpretado desde la costa con calma y estilo.",
-    "imagen": "coastal.jpg",
-    "audio": null,
-    "tags": [
-      "cowboy",
-      "playa",
-      "botas",
-      "sombrero",
-      "costa",
-      "2026"
-    ]
-  },
-  {
-    "id": 24,
-    "nombre": "Maximalism 2026",
-    "categoria": "Lujo Expresivo",
-    "descripcion": "Más es más. Estampados sobre estampados, accesorios apilados, colores que chocan intencionalmente y capas que compiten entre sí. El maximalismo de 2026 no busca coherencia: busca impacto. Una respuesta directa y ruidosa a años de minimalismo contenido.",
-    "imagen": "maximalism.jpg",
-    "audio": null,
-    "tags": [
-      "maximalismo",
-      "estampados",
-      "capas",
-      "impacto",
-      "expresivo",
-      "2026"
-    ]
-  },
-  {
-    "id": 25,
-    "nombre": "Bling Minimalista",
-    "categoria": "Lujo Expresivo",
-    "descripcion": "Un solo elemento de lujo visible sobre un look completamente básico. Una cadena de oro gruesa sobre camiseta blanca, un reloj llamativo con outfit monocromático o una cartera de diseñador con ropa sin marca. El contraste como técnica de estilo: que brille uno solo.",
-    "imagen": "bling.jpg",
-    "audio": null,
-    "tags": [
-      "bling",
-      "cadena",
-      "lujo",
-      "minimalista",
-      "contraste",
-      "2026"
-    ]
-  },
-  {
-    "id": 26,
-    "nombre": "Skate Gráfico",
-    "categoria": "Streetwear",
-    "descripcion": "La cultura skate noventera regresa con fuerza gráfica. Pantalones anchos, gorras planas, camisetas con ilustraciones de videojuego y zapatillas de suela gruesa definen este estilo. No es nostalgia: es una reinterpretación actual de la rebeldía visual que nació en las calles y los skateparks.",
-    "imagen": "skate.jpg",
-    "audio": null,
-    "tags": [
-      "skate",
-      "gráfico",
-      "noventero",
-      "ancho",
-      "streetwear",
-      "2026"
-    ]
-  },
-  {
-    "id": 27,
-    "nombre": "Floral Oscuro",
-    "categoria": "Romántico",
-    "descripcion": "Los florales abandonan el pastel y se tiñen de oscuridad. Estampados grandes en fondos negros, burdeos o verde botella con flores detalladas y dramáticas. Una estética que mezcla lo gótico con lo romántico, transformando el floral más tradicional en algo inesperadamente intenso.",
-    "imagen": "floral.jpg",
-    "audio": null,
-    "tags": [
-      "floral",
-      "oscuro",
-      "gótico",
-      "romántico",
-      "estampado",
-      "2026"
-    ]
-  },
-  {
-    "id": 28,
-    "nombre": "Fur Statement",
-    "categoria": "Lujo Expresivo",
-    "descripcion": "Una sola prenda de pelo sintético que domina y define todo el look. Abrigo, bolso, zapatos o cinto — el fur statement es la pieza protagonista absoluta rodeada de básicos que no compiten. En 2026 el pelo sintético es lujo accesible y la declaración más contundente que podés hacer al vestir.",
-    "imagen": "fur.jpg",
-    "audio": null,
-    "tags": [
-      "fur",
-      "pelo",
-      "sintético",
-      "statement",
-      "lujo",
       "2026"
     ]
   }
