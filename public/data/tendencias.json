@@ -4,7 +4,7 @@
     "nombre": "Gorpcore Urbano",
     "categoria": "Utilitario",
     "descripcion": "El Gorpcore Urbano fusiona la estética outdoor con el streetwear cotidiano. Pantalones cargo, chaquetas resistentes al viento, botas de senderismo y colores como verde oliva, beige y gris lavado dominan este estilo. No es solo moda: es funcionalidad llevada a la calle.",
-    "imagen": "gorpcore.jpg",
+    "imagen": "https://images.pexels.com/photos/16214187/pexels-photo-16214187.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
     "audio": "audio_gorpcore.mp3",
     "tags": [
       "utilitario",
@@ -19,7 +19,7 @@
     "nombre": "Color Block",
     "categoria": "Streetwear",
     "descripcion": "Combinar bloques de colores vibrantes sin miedo es la esencia del Color Block. Desde tonos pastel hasta neones intensos, esta tendencia impulsada por marcas como Nike, Adidas y New Balance domina el streetwear de primavera 2026. El objetivo es crear looks llenos de personalidad cromática.",
-    "imagen": "colorblock.jpg",
+    "imagen": "https://images.pexels.com/photos/5579856/pexels-photo-5579856.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
     "audio": "audio_colorblock.mp3",
     "tags": [
       "colores",
@@ -35,7 +35,7 @@
     "nombre": "Glamuratti",
     "categoria": "Lujo Expresivo",
     "descripcion": "Una reacción directa al Quiet Luxury. El Glamuratti recupera el exceso medido: brillos, plumas, texturas llamativas y estampados que convierten la ropa en una forma de expresión pura. No se trata de gritar, sino de impactar con intención.",
-    "imagen": "glamuratti.jpg",
+    "imagen": "https://images.pexels.com/photos/28508085/pexels-photo-28508085.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
     "audio": "audio_glamuratti.mp3",
     "tags": [
       "lujo",
@@ -50,7 +50,7 @@
     "nombre": "Poetcore",
     "categoria": "Romántico",
     "descripcion": "El Poetcore apuesta por la sobriedad romántica. Telas suaves, paletas neutras, siluetas fluidas y detalles delicados como broches vintage o cuellos con volumen. Es el estilo de quien construye su imagen desde la introspección y la sensibilidad.",
-    "imagen": "poetcore.jpg",
+    "imagen": "https://images.pexels.com/photos/32207330/pexels-photo-32207330.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
     "audio": null,
     "tags": [
       "romántico",

@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import SearchBar from './components/SearchBar'
 import FilterBar from './components/FilterBar'
 import EntradaCard from './components/EntradaCard'
+import Modal from './components/Modal'
 import './App.css'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
   const [categoriaActiva, setCategoriaActiva] = useState('Todas')
   const [darkMode, setDarkMode] = useState(false)
   const [loading, setLoading] = useState(true)
+  const [entradaSeleccionada, setEntradaSeleccionada] = useState(null)
 
   useEffect(() => {
     fetch('/proyectopersonal-enciclopedia-c37683/data/tendencias.json')
@@ -24,6 +26,14 @@ function App() {
   useEffect(() => {
     document.body.classList.toggle('dark', darkMode)
   }, [darkMode])
+
+  useEffect(() => {
+    if (entradaSeleccionada) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+  }, [entradaSeleccionada])
 
   const categorias = useMemo(() => {
     return [...new Set(tendencias.map((t) => t.categoria))]
@@ -40,7 +50,9 @@ function App() {
   return (
     <>
       <Navbar darkMode={darkMode} toggleDarkMode={() => setDarkMode(!darkMode)} />
-      <header className="hero-header">
+      <header className="hero-header" style={{
+        backgroundImage: `url('https://images.pexels.com/photos/6985048/pexels-photo-6985048.jpeg?auto=compress&cs=tinysrgb&w=1600')`
+      }}>
         <p className="hero-eyebrow">Edición 2026 — Moda Urbana</p>
         <h1 className="hero-title">Micro<br />tendencias</h1>
         <p className="hero-sub">Un archivo visual de las estéticas que están definiendo la moda urbana en 2026.</p>
@@ -64,7 +76,12 @@ function App() {
             <div className="grid">
               {filtradas.length > 0 ? (
                 filtradas.map((entrada, index) => (
-                  <EntradaCard key={entrada.id} entrada={entrada} index={index + 1} />
+                  <EntradaCard
+                    key={entrada.id}
+                    entrada={entrada}
+                    index={index + 1}
+                    onClick={setEntradaSeleccionada}
+                  />
                 ))
               ) : (
                 <div className="empty-state">
@@ -75,6 +92,7 @@ function App() {
           </>
         )}
       </main>
+      <Modal entrada={entradaSeleccionada} onClose={() => setEntradaSeleccionada(null)} />
     </>
   )
 }

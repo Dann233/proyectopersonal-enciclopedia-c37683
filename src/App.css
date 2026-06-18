@@ -42,33 +42,57 @@
 
 /* ── HERO HEADER ── */
 .hero-header {
-  padding: 64px 40px 40px;
+  padding: 100px 40px 80px;
   border-bottom: 1px solid var(--border);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 420px;
+  justify-content: center;
+}
+
+.hero-header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
 }
 
 .hero-eyebrow {
   font-size: 11px;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: rgba(255,255,255,0.6);
   margin-bottom: 12px;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-title {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(64px, 10vw, 120px);
+  font-size: clamp(80px, 14vw, 160px);
   line-height: 0.9;
   letter-spacing: -1px;
-  color: var(--text);
+  color: #ffffff;
   text-transform: uppercase;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-sub {
-  margin-top: 20px;
+  margin-top: 24px;
   font-size: 14px;
-  color: var(--text-secondary);
+  color: rgba(255,255,255,0.65);
   max-width: 480px;
   line-height: 1.6;
+  position: relative;
+  z-index: 1;
 }
 
 /* ── CONTROLS ── */
@@ -142,15 +166,6 @@
   flex: 1;
 }
 
-/* ── RESULTS INFO ── */
-.results-info {
-  padding: 20px 40px 0;
-  font-size: 11px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--text-muted);
-}
-
 /* ── GRID ── */
 .grid {
   display: grid;
@@ -169,6 +184,7 @@
   transition: background 0.2s;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .entrada-card:hover {
@@ -184,6 +200,7 @@
   width: 100%;
   height: 260px;
   object-fit: cover;
+  object-position: top;
   display: block;
   filter: grayscale(15%);
   transition: transform 0.4s ease, filter 0.3s;
@@ -210,7 +227,7 @@
   padding: 24px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
   flex: 1;
 }
 
@@ -236,6 +253,11 @@
   font-size: 13px;
   color: var(--text-secondary);
   line-height: 1.65;
+}
+
+/* Tags y audio ocultos en card, solo visibles en modal */
+.entrada-extra {
+  display: none;
 }
 
 .entrada-tags {
@@ -292,33 +314,6 @@
   text-transform: uppercase;
 }
 
-/* ── RESPONSIVE ── */
-@media (max-width: 768px) {
-  .navbar {
-    padding: 0 20px;
-  }
-
-  .hero-header {
-    padding: 40px 20px 28px;
-  }
-
-  .controls {
-    padding: 20px;
-  }
-
-  .results-info {
-    padding: 16px 20px 0;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .entrada-img {
-    height: 220px;
-  }
-}
-
 /* ── LOADING STATE ── */
 .loading-state {
   display: flex;
@@ -345,7 +340,7 @@
   to { transform: rotate(360deg); }
 }
 
-/* ── RESULTS COUNTER ANIMADO ── */
+/* ── RESULTS COUNTER ── */
 .results-info {
   padding: 20px 40px 0;
   font-size: 11px;
@@ -363,4 +358,139 @@
   color: var(--text);
   line-height: 1;
   transition: all 0.2s ease;
+}
+
+/* ── MODAL ── */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modal-content {
+  background: var(--bg-card);
+  max-width: 860px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  animation: slideUp 0.25s ease;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.modal-close:hover {
+  background: var(--border);
+}
+
+.modal-img-wrapper {
+  overflow: hidden;
+}
+
+.modal-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  min-height: 400px;
+}
+
+.modal-info {
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow-y: auto;
+}
+
+.modal-nombre {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: var(--text);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.modal-desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .hero-header {
+    padding: 60px 20px 50px;
+    min-height: 320px;
+  }
+
+  .controls {
+    padding: 20px;
+  }
+
+  .results-info {
+    padding: 16px 20px 0;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .entrada-img {
+    height: 220px;
+  }
+
+  .modal-content {
+    grid-template-columns: 1fr;
+    max-height: 95vh;
+  }
+
+  .modal-img {
+    min-height: 260px;
+  }
+
+  .modal-info {
+    padding: 24px 20px;
+  }
 }

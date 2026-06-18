@@ -1,11 +1,17 @@
-import AudioPlayer from './AudioPlayer'
+function EntradaCard({ entrada, index, onClick }) {
+  const imageSrc = entrada.imagen.startsWith('http')
+    ? entrada.imagen
+    : `/proyectopersonal-enciclopedia-c37683/images/${entrada.imagen}`
 
-function EntradaCard({ entrada, index }) {
+  const descCorta = entrada.descripcion.length > 100
+    ? entrada.descripcion.slice(0, 100) + '...'
+    : entrada.descripcion
+
   return (
-    <div className="entrada-card">
+    <div className="entrada-card" onClick={() => onClick(entrada)}>
       <div className="entrada-img-wrapper">
         <img
-          src={`/images/${entrada.imagen}`}
+          src={imageSrc}
           alt={entrada.nombre}
           className="entrada-img"
         />
@@ -14,13 +20,14 @@ function EntradaCard({ entrada, index }) {
       <div className="entrada-info">
         <span className="entrada-categoria">{entrada.categoria}</span>
         <h2 className="entrada-nombre">{entrada.nombre}</h2>
-        <p className="entrada-desc">{entrada.descripcion}</p>
-        <div className="entrada-tags">
-          {entrada.tags.map((tag) => (
-            <span key={tag} className="tag">#{tag}</span>
-          ))}
+        <p className="entrada-desc">{descCorta}</p>
+        <div className="entrada-extra">
+          <div className="entrada-tags">
+            {entrada.tags.map((tag) => (
+              <span key={tag} className="tag">#{tag}</span>
+            ))}
+          </div>
         </div>
-        <AudioPlayer src={entrada.audio} />
       </div>
     </div>
   )
