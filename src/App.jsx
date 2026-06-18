@@ -4,8 +4,7 @@ import SearchBar from './components/SearchBar'
 import FilterBar from './components/FilterBar'
 import EntradaCard from './components/EntradaCard'
 import Modal from './components/Modal'
-import './App.css'
-
+import './styles/App.css'
 function App() {
   const [tendencias, setTendencias] = useState([])
   const [query, setQuery] = useState('')

@@ -1,3 +1,5 @@
+import AudioPlayer from './AudioPlayer'
+
 function Modal({ entrada, onClose, onPrev, onNext }) {
   if (!entrada) return null
 
@@ -23,12 +25,7 @@ function Modal({ entrada, onClose, onPrev, onNext }) {
               <span key={tag} className="tag">#{tag}</span>
             ))}
           </div>
-          {entrada.audio && (
-            <div className="audio-player">
-              <span className="audio-label">🎧 Escuchar descripción</span>
-              <audio controls src={`/audio/${entrada.audio}`} />
-            </div>
-          )}
+          <AudioPlayer src={entrada.audio} />
         </div>
       </div>
     </div>
