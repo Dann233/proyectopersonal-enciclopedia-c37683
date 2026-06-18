@@ -41,41 +41,62 @@ Enciclopedia web interactiva que documenta 12 microtendencias de moda urbana vig
 
 ## Instrucciones de ejecución
 
-### Requisitos previos
-- Node.js 18 o superior
-- npm
+### Paso 1 — Instalar Node.js
 
-### Pasos
+1. Entrá a https://nodejs.org
+2. Descargá la versión **LTS** (la recomendada)
+3. Ejecutá el instalador y seguí los pasos (Next → Next → Install)
+4. Para verificar que quedó instalado, abrí una terminal y ejecutá:
 
 ```bash
-# 1. Clonar el repositorio
+node -v
+npm -v
+```
+
+Ambos comandos deben mostrar un número de versión.
+
+### Paso 2 — Instalar Git
+
+1. Entrá a https://git-scm.com/downloads
+2. Descargá e instalá Git para tu sistema operativo
+3. Para verificar que quedó instalado:
+
+```bash
+git --version
+```
+
+### Paso 3 — Clonar el repositorio
+
+```bash
 git clone https://github.com/Dann233/proyectopersonal-enciclopedia-c37683.git
+```
 
-# 2. Entrar a la carpeta
+### Paso 4 — Entrar a la carpeta del proyecto
+
+```bash
 cd proyectopersonal-enciclopedia-c37683
+```
 
-# 3. Instalar dependencias
+### Paso 5 — Instalar dependencias
+
+```bash
 npm install
+```
 
-# 4. Levantar servidor de desarrollo
+### Paso 6 — Levantar el servidor de desarrollo
+
+```bash
 npm run dev
 ```
 
-La aplicación estará disponible en `http://localhost:5173/proyectopersonal-enciclopedia-c37683/`
-
-### Build y deploy
-
-```bash
-# Construir para producción
-npm run build
-
-# Desplegar en GitHub Pages
-npm run deploy
-```
+La aplicación estará disponible en el navegador en:
+`http://localhost:5173/proyectopersonal-enciclopedia-c37683/`
 
 ---
 
 ## Demo en línea
+
+Si no querés instalar nada, podés ver el proyecto directamente en:
 
 [https://dann233.github.io/proyectopersonal-enciclopedia-c37683/](https://dann233.github.io/proyectopersonal-enciclopedia-c37683/)
 

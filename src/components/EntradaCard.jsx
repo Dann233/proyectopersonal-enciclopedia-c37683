@@ -8,7 +8,7 @@ function EntradaCard({ entrada, index, onClick }) {
     : entrada.descripcion
 
   return (
-    <div className="entrada-card" onClick={() => onClick(entrada)}>
+    <div className="entrada-card" onClick={onClick}>
       <div className="entrada-img-wrapper">
         <img
           src={imageSrc}
